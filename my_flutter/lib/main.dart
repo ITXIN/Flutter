@@ -119,16 +119,81 @@ class _MyHomePageState extends State<MyHomePage> {
               color: Colors.black, fontSize: 20.0, fontWeight: FontWeight.bold),
         )),
         titleTextStyle: TextStyle(color: Colors.red, fontSize: 25),
-        content: Text("您确定要删除当前文件吗?"),
+        content: Container(
+            child: Text(
+          '你热量零食打发了时间都浪费了多少分浪费的时间浪费多少分类舒服了对双方来说分类,你热量零食打发了时间都浪费了多少分浪费的时间浪费多少分类舒服了对双方来说分类',
+          style: TextStyle(
+              color: Colors.black, fontSize: 20.0, fontWeight: FontWeight.bold),
+        )),
         actions: _actions());
   }
 
   List<Widget> _actions() {
+    // return <Widget>[
+    //   // Expanded(
+    //   //   flex: 5,
+    //   //   child: new Row(
+    //   //     children: <Widget>[
+            // Expanded(
+            //   flex: 1,
+            //     child: new Container(
+            //   alignment: Alignment.center,
+            //   color: Colors.black38,
+            //   child: new Text("這裡是logo"),
+            // )),
+    //         Expanded(
+    //           flex: 1,
+    //             child: new Container(
+    //           alignment: Alignment.center,
+    //           color: Colors.black38,
+    //           child: new Text("這裡是logo"),
+    //         ))
+    //     //   ],
+    //     // ))
+    // ];
+
     var actions = 1;
     if (actions == 1) {
       return <Widget>[
+        // Container(
+        //   child: Expanded(
+        //     child: Expanded(
+        //       flex: 1,
+        //         child: new Container(
+        //       alignment: Alignment.center,
+        //       color: Colors.black38,
+        //       child: new Text("這裡是logo"),
+        //     )),
+        //   )
+        // )
+
+        // Row(
+        //   mainAxisAlignment: MainAxisAlignment.center,
+        //   children: <Widget>[
+        //     OutlineButton(
+        //       child: Text("button1"),
+        //       onPressed: () {},
+        //       splashColor: Colors.grey[100],
+        //       borderSide: BorderSide(color: Colors.black),
+        //     ),
+        //     OutlineButton(
+        //       child: Text("button2"),
+        //       onPressed: () {},
+        //       splashColor: Colors.grey[100],
+        //       borderSide: BorderSide(color: Colors.black),
+        //     ),
+        //   ],
+        // )
         Padding(
           padding: EdgeInsets.fromLTRB(40, 0, 10, 0),
+        ),
+        OutlineButton(
+          child: Text("button"),
+          onPressed: (){},
+          splashColor: Colors.grey[100],
+          borderSide: BorderSide(
+            color: Colors.black
+          ),
         ),
         FlatButton(
           // padding: EdgeInsets.fromLTRB(10, 0, 150, 0),
@@ -164,7 +229,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
   Widget _showCupertinoAlertDialog() {
     return CupertinoAlertDialog(
-      title: Text("data"),
+      title: Text("提示"),
       content: new SingleChildScrollView(
         child: ListBody(
           children: <Widget>[
