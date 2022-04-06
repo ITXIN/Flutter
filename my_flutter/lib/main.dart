@@ -2,6 +2,8 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:english_words/english_words.dart';
 import 'package:my_flutter/list.dart';
+import 'package:my_flutter/page/anmation.dart';
+import 'package:my_flutter/page/move_game_widget.dart';
 
 void main() => runApp(MyApp());
 
