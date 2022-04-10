@@ -61,9 +61,10 @@ class _MyHomePageState extends State<MyHomePage> {
             title: Text("push test"),
           ),
           body: GestureDetector(
-            child: Text(
-              'pushed view',
-            ),
+            child: Demo10(),
+            // Text(
+            //   'pushed view',
+            // ),
             onTap: () {
               Navigator.pop(context, 100);
             },
@@ -105,6 +106,17 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: _incrementCounter,
+        // onPressed: () {
+        //   Navigator.push(
+        //       context,
+        //       PageRouteBuilder(
+        //           transitionDuration: Duration(milliseconds: 500),
+        //           pageBuilder: (BuildContext context, Animation animation,
+        //               Animation secondAnimation) {
+        //             return FadeTransition(
+        //                 opacity: animation, child: RandomWords());
+        //           }));
+        // },
         // onPressed: () async {},
         tooltip: 'Increment',
         child: Icon(Icons.add),
