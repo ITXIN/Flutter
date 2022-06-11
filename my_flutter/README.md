@@ -4,6 +4,7 @@ A new Flutter project.
 
 ## Getting Started
 flutter run
+## 如果报null safe 则使用flutter run --no-sound-null-safety
 
 This project is a starting point for a Flutter application.
 
